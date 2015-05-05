@@ -31,7 +31,10 @@
 
         .leaflet-map {
             padding: 0;
-            margin: 0;
+            margin-left: 0px;
+            margin-top: 8px;
+            margin-right: 0px;
+            margin-bottom: 8px;
             width: 500px;
             height: 300px;
         }
@@ -112,11 +115,10 @@
     <!-- Projects Row -->
     <div class="row">
         <div class="col-md-6 img-portfolio">
-            <div class="leaflet-map" id="opentopomap"></div>
-
             <h3>
                 <a href="kaarten.html">OpenTopo</a>
             </h3>
+            <div class="leaflet-map" id="opentopomap"></div>
 
             <p><a target="_new" href="http://opentopo.nl/">OpenTopo.nl</a> biedt
                 gedetailleerde actuele kaartbladen waarin het beste uit open geodata bronnen is
@@ -158,14 +160,50 @@
                 naar OpenTopo.nl. Dus met uw abonnement ondersteunt u de verdere ontwikkeling en aktualiteit
                 van de OpenTopo kaarten!
             </p>
+            <h3>
+                 <a href="kaarten.html">Reliëfkaart NL (Binnenkort)</a>
+             </h3>
+              <p>
+                 <img src="media/relief-struct-500x300.jpg" alt="reliefkaart" />
+             </p>
+             <p>
+                 De Reliëfkaart van Nederland is een zgn "hillshading" kaart op basis van het
+                 <a href="http://www.ahn.nl/">Algemeen Hoogtebestand Nederland (AHN2)</a>. Hierboven een voorproefje.
+                 Er is een "kale" basis-reliëfkaart en, zoals hierboven een reliëfkaart met lichte structuren uit
+                 Top10NL, BAG en BRK. Deze laatste kaart is ook weer vervaardigd door Jan-Willem van Aalst.
+             </p>
+            <h3>
+                <a href="kaarten.html">Kadaster Top250/50/25 Raster (Binnenkort)</a>
+            </h3>
+            <p>
+               <img src="media/kadaster-top25-relief-struct.jpg" alt="kadaster-top25-relief-struct" />
+           </p>
+
+            <p>
+                De (drie) <a href="https://www.kadaster.nl/web/artikel/Alle-producten-1/TOPraster.htm">TOPraster
+                kaarten</a>
+                van Kadaster zijn digitale cartografische weergaves van TOP10NL in de schalen
+                1:250000, 1:50000 en 1:25000. Welliswaar biedt PDOK deze kaarten al via WMS en tiling, echter de Map5.nl
+                versie heeft de volgende extra's en dus toegevoegde waarde:
+            </p>
+
+            <ul>
+                <li>
+                    "Composiete" kaart waar alle drie de schalen in terugkomen (ipv 1 laag per schaal in PDOK).
+                </li>
+                <li>
+                    minder korreligheid door NLExtract voorbewerking
+                </li>
+                <li>ook als OpenStreetMap/Google tiles (PDOK levert alleen RD)</li>
+                <li>reliëf met AHN2 (zie boven)</li>
+                <li>Hoge resolutie (HD) versie</li>
+            </ul>
         </div>
         <div class="col-md-6 img-portfolio">
-            <div class="leaflet-map" id="bonnemap_1949"></div>
-
             <h3>
                 <a href="kaarten.html">Bonnebladen</a>
             </h3>
-
+            <div class="leaflet-map" id="bonnemap_1949"></div>
             <p>Bonnekaarten of Bonnebladen zijn de eerste Nederlandse militaire stafkaarten.
                 De oudste werden kort voor 1900 uitgegeven.
                 De kaarten staan bekend als de Bonnekaarten of Bonnebladen naar de Franse landmeter Bonne
@@ -177,19 +215,10 @@
                 zijn daarin de op dat moment geldende Bonnebladen opgenomen. Per jaartal is er ook een "index-laag"
                 die per blad het bladnummer en uitgave-jaar laat zien.
             </p>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Projects Row -->
-    <div class="row">
-        <div class="col-md-6 img-portfolio">
-            <div class="leaflet-map" id="tmkmap_1850"></div>
-
             <h3>
                 <a href="kaarten.html">Topografisch Militaire Kaart (TMK) 1850</a>
             </h3>
-
+            <div class="leaflet-map" id="tmkmap_1850"></div>
             <p>
                 De eerste serie gedetailleerde topografische kaarten die voor heel Nederland gemaakt zijn is de
                 Topographisch Militaire Kaart (kortweg TMK),
@@ -202,44 +231,6 @@
                 randen ook weggewerkt worden. Er is ook een "index-laag"
                 die de bladnummers laat zien.
             </p>
-        </div>
-        <div class="col-md-6 img-portfolio">
-            <p>
-                Binnenkort verkrijgbaar:
-            </p>
-
-            <h3>
-                <a href="kaarten.html">Reliëfkaart NL</a>
-            </h3>
-
-            <p>
-                De Reliëfkaart van Nederland is een zgn "hillshading" kaart op basis van het
-                <a href="http://www.ahn.nl/">Algemeen Hoogtebestand Nederland (AHN2)</a>.
-            </p>
-
-            <h3>
-                <a href="kaarten.html">Kadaster Top250/50/25 Raster</a>
-            </h3>
-
-            <p>
-                De (drie) <a href="https://www.kadaster.nl/web/artikel/Alle-producten-1/TOPraster.htm">TOPraster
-                kaarten</a>
-                van Kadaster zijn digitale cartografische weergaves van TOP10NL in de schalen
-                1:250000, 1:50000 en 1:25000. Welliswaar biedt PDOK deze kaarten al via WMS en tiling, echter de Map5.nl
-                versie heeft de volgende extra's en dus toegevoegde waarde:
-            </p>
-
-            <ul>
-                <li>
-                    Net als de OpenTopo laag een "composiete" kaart waar alle drie de schalen in
-                    terugkomen (ipv 1 laag per schaal in PDOK).
-                </li>
-                <li>
-                    minder korreligheid door NLExtract voorbewerking
-                </li>
-                <li>ook als OpenStreetMap/Google tiles (PDOK levert alleen RD)</li>
-                <li>Hoge resolutie (HD) versie</li>
-            </ul>
             <h3>
                 <a href="kaarten.html">Uw Kaart?</a>
             </h3>
@@ -249,9 +240,19 @@
                 in uw infrastructuur beschikbaar maken. Neem <a href="contact.html">contact</a> met ons
                 op!
             </p>
-
-        </div>
+         </div>
     </div>
+    <!-- /.row -->
+
+    <!-- Projects Row -->
+    <!--<div class="row">-->
+        <!--<div class="col-md-6 img-portfolio">-->
+        <!--</div>-->
+        <!--<div class="col-md-6 img-portfolio">-->
+
+
+        <!--</div>-->
+    <!--</div>-->
     <!-- /.row -->
 
 
