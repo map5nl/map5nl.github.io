@@ -111,6 +111,7 @@
         </div>
     </div>
     <!-- /.row -->
+    <p>Hieronder staan de beschikbare kaarten. Iedere kaart is interaktief, dwz via de +/- knop kan in/uitgezoomd worden.</p>
 
     <!-- Projects Row -->
     <div class="row">
@@ -149,7 +150,7 @@
                 kaartlaag/resolutie
                 getoond. Vooral de resoluties 800 en 1600px/km zijn zeer gedetailleerd. Ter vergelijking: de Kadaster
                 Top25 Rasterkaart
-                1:25000 heeft een resolutie van 400px/km...Verder zal de kaart ongeveer viermaal per jaar ververst
+                1:25000 heeft een resolutie van 400px/km... Verder zal de kaart ongeveer viermaal per jaar ververst
                 worden.
                 Hiermee is OpenTopo niet alleen de mooiste maar ook een zeer aktuele kaart van Nederland.
             </p>
@@ -161,29 +162,38 @@
                 van de OpenTopo kaarten!
             </p>
             <h3>
-                 Reliëfkaart NL (Binnenkort)
+                 Reliëfkaart NL
              </h3>
-              <p>
-                 <img src="media/relief-struct-500x300-1600.jpg" alt="reliefkaart" />
-             </p>
+            <div class="leaflet-map" id="relief_structmap"></div>
+              <!--<p>-->
+                 <!--<img src="media/relief-struct-500x300-1600.jpg" alt="reliefkaart" />-->
+             <!--</p>-->
              <p>
                  De Reliëfkaart van Nederland is een zgn "hillshading" kaart op basis van het
-                 <a href="http://www.ahn.nl/">Algemeen Hoogtebestand Nederland (AHN2)</a>. Hierboven een voorproefje.
-                 De Reliëfkaart zal beschikbaar zijn tot een zeer hoog detailniveau: 1600 pixels/meter, plm schaal 1:5000.
-                 Er is een "kale" basis-reliëfkaart en, zoals hierboven een reliëfkaart met lichte structuren uit
-                 Top10NL, BAG en BRK. Deze laatste kaart wordt vervaardigd door Jan-Willem van Aalst.
-                 De conversie van AHN2 puntendata is gedaan door Frank Steggink.
+                 <a href="http://www.ahn.nl/">Algemeen Hoogtebestand Nederland (AHN2)</a>.
+                 De Reliëfkaart is beschikbaar tot een zeer hoog detailniveau.
+                 Deze kaart is gemaakt uit een basis-relëfkaart met transparant daaroverheen
+                 lichte structuren uit
+                 Top10NL, BAG en BRK.
+                 Ook deze kaart is een "composiet": vervaardigd uit meerdere bronbestanden met resoluties
+                 tot 1600 pixels/km (62.5 cm/px).
+                 Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
+                 De conversie van AHN2 puntendata uit PDOK naar de basis-reliëfkaart is gedaan door Frank Steggink.
              </p>
             <h3>
-                 OpenLufo (Binnenkort)
+                 OpenLufo
              </h3>
-             <p>
-                <img src="media/openlufo-500-300.jpg" alt="openlufo-500-300" />
-            </p>
+            <div class="leaflet-map" id="openlufomap"></div>
+             <!--<p>-->
+                <!--<img src="media/openlufo-500-300.jpg" alt="openlufo-500-300" />-->
+            <!--</p>-->
 
              <p>
-                 Luchtfoto's uit PDOK met een lichte overlay met topografie uit OpenTopo, dus onder andere
-                 met Top10NL, BAG en OpenStreetMap labels.  Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
+                 Luchtfoto's uit PDOK met een lichte overlay van topografie uit OpenTopo, dus onder andere
+                 met Top10NL, BAG en OpenStreetMap labels. Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
+                 ook deze kaart is tot hoog detailmniveau beschikbaar. Hierdoor kunnen labels zoals huisnummers (uit BAG)
+                 bekeken worden. Ook deze kaart is een "composiet": vervaardigd uit meerdere bronbestanden met resoluties
+                 tot 1600 pixels/km (62.5 cm/px).
              </p>
         </div>
         <div class="col-md-6 img-portfolio">
@@ -329,18 +339,32 @@
     // Info interactieve kaarten
     var mapInfos = [
         {
-            div: 'opentopomap',
-            url: 'http://s.map5.nl/map/gast/tiles/opentopo/EPSG900913/{z}/{x}/{y}.png',
-            latlon: [52.312, 5.6],
-            zoom: 15,
-            attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
-        },
-        {
             div: 'bonnemap_1949',
             url: 'http://s.map5.nl/map/gast/tiles/bonne_1949/EPSG900913/{z}/{x}/{y}.png',
             latlon: [52.157, 5.394], // amersfoort
             zoom: 14,
             attribution: ''
+        },
+        {
+            div: 'openlufomap',
+            url: 'http://s.map5.nl/map/gast/tiles/openlufo/EPSG900913/{z}/{x}/{y}.jpeg',
+            latlon: [52.157, 5.394], // amersfoort
+            zoom: 15,
+            attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
+        },
+        {
+            div: 'opentopomap',
+            url: 'http://s.map5.nl/map/gast/tiles/opentopo/EPSG900913/{z}/{x}/{y}.jpeg',
+            latlon: [52.312, 5.6],
+            zoom: 15,
+            attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
+        },
+        {
+            div: 'relief_structmap',
+            url: 'http://s.map5.nl/map/gast/tiles/relief_struct/EPSG900913/{z}/{x}/{y}.jpeg',
+            latlon: [52.006, 5.983], // Velp bij Keienberg
+            zoom: 15,
+            attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
         },
         {
             div: 'tmkmap_1850',
