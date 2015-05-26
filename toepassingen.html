@@ -157,10 +157,10 @@
                                 switchen tussen alle beschikbare kaartlagen (default is OpenTopo)
                             </li>
                             <li>
-                                overlay van OpenStreetMap NL wandelroutes
+                                overlay van wandelroutes (OpenStreetMap of PDOK/Wandelnet LAW en Streekpaden)
                             </li>
                             <li>
-                                 overlay van OpenStreetMap NL fietsroutes -en knooppunten
+                                 overlay van fietsroutes -en knooppunten (OSM of PDOK)
                              </li>
                             <li>
                                 eigen locatie volgen met GPS
@@ -168,14 +168,24 @@
                             <li>
                                 snel naar plek op kaart gaan met zoekunctie
                             </li>
+                            <li>
+                                delen van kaartbeeld via dynamische URL* bijv: <a href="http://app.map5.nl/nltopo/#rd/relief_struct/12/5.692633/52.28434">contouren Romeins Fort op de Veluwe</a>
+                            </li>
                         </ul>
                         <p>
                              Als je een <a href="prijzen.html">abonnement</a> hebt kun je de NLTopo app zonder<br/>
                              reclame gebruiken door je "key" aan de weblink toe te voegen. <br/>
                             De weblink wordt dan: <br/>
-                            <strong>http://app.map5.nl/nltopo/&lt;mijn key&gt;</strong> waarbij
-                            <strong>&lt;mijn key&gt;</strong> je map5 key is.
+                            <code>http://app.map5.nl/nltopo/&lt;mijn key&gt;</code> waarbij
+                            <code>&lt;mijn key&gt;</code> je map5 key is.
                          </p>
+                        <p>
+                            *Bij veranderen kaartbeeld wordt steeds het URL segment aangepast. De conventie hiervoor is:<br/>
+                            <code>http://app.map5.nl/nltopo/#&lt;projectie&gt;/&lt;laagnaam&gt;/&lt;zoom&gt;/&lt;longitude&gt;/&lt;latitude&gt;</code>, bijvoorbeeld<br/>
+                            <a href="http://app.map5.nl/nltopo/#rd/relief_struct/12/5.692633/52.28434">http://app.map5.nl/nltopo/#rd/relief_struct/12/5.692633/52.28434</a> (RD projectie) of<br/>
+                            <a href="http://app.map5.nl/nltopo/#osm/relief_struct/17/5.692633/52.28434">http://app.map5.nl/nltopo/#osm/relief_struct/17/5.692633/52.28434</a> (OSM projectie).<br/>
+                            Via "copy/paste" van de URL uit de browser lokatie-balk kan op simpele wijze een kaartbeeld gedeeld worden.
+                        </p>
                     </td>
                     <td>
                         <a href="http://app.map5.nl/nltopo">
