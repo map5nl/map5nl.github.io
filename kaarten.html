@@ -187,20 +187,25 @@
                 <a href="http://app.map5.nl/nltopo/#rd/openlufo/3/5.6/52.312">OpenLufo</a>
              </h3>
             <div class="leaflet-map" id="openlufomap"></div>
-             <!--<p>-->
-                <!--<img src="media/openlufo-500-300.jpg" alt="openlufo-500-300" />-->
-            <!--</p>-->
-
              <p>
                  Luchtfoto's uit PDOK met een lichte overlay van topografie uit OpenTopo, dus onder andere
                  met Top10NL, BAG en OpenStreetMap labels. Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
                  ook deze kaart is tot hoog detailniveau beschikbaar. Hierdoor kunnen labels zoals huisnummers (uit BAG)
                  bekeken worden. Ook deze kaart is een "composiet": vervaardigd uit meerdere bronbestanden met resoluties
                  tot 1600 pixels/km (62.5 cm/px).
-                 <strong>NB deze laag is gratis (zonder reclame) omdat commercieël (her)gebruik van de luchtfoto's
+                 <strong>NB deze laag is altijd gratis (dus zonder reclame) omdat commercieël (her)gebruik van de luchtfoto's
                      niet is toegestaan vanwege de PDOK
                      CC-BY-NC/GeoGedeeld licentie.</strong>
              </p>
+            <h3>
+                Uw Kaart?
+            </h3>
+
+            <p>
+                Op aanvraag kunnen wij gespecialiseerde kaarten samenstellen en deze hier of
+                in uw infrastructuur beschikbaar maken. Neem <a href="contact.html">contact</a> met ons
+                op!
+            </p>
 
 
         </div>
@@ -237,6 +242,14 @@
                 die de bladnummers laat zien.
             </p>
             <h3>
+                <a href="http://app.map5.nl/nltopo/#rd/opensimpletopo/3/5.6/52.312">OpenSimpleTopo</a>
+            </h3>
+            <div class="leaflet-map" id="opensimpletopomap"></div>
+            <p>
+                Lichte versie van OpenTopo kaart met rustiger kaartbeeld. Geschikt als achtergrondkaart.
+            </p>
+
+            <h3>
                 Kadaster Top250/50/25 Raster (Binnenkort)
             </h3>
             <p>
@@ -263,15 +276,6 @@
                 <li>Hoge resolutie (HD) versie</li>
             </ul>
 
-            <h3>
-                Uw Kaart?
-            </h3>
-
-            <p>
-                Op aanvraag kunnen wij gespecialiseerde kaarten samenstellen en deze hier of
-                in uw infrastructuur beschikbaar maken. Neem <a href="contact.html">contact</a> met ons
-                op!
-            </p>
          </div>
     </div>
     <!-- /.row -->
@@ -363,6 +367,13 @@
         {
             div: 'opentopomap',
             url: 'http://s.map5.nl/map/gast/tiles/opentopo/EPSG900913/{z}/{x}/{y}.jpeg',
+            latlon: [52.312, 5.6],
+            zoom: 15,
+            attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
+        },
+        {
+            div: 'opensimpletopomap',
+            url: 'http://s.map5.nl/map/gast/tiles/opensimpletopo/EPSG900913/{z}/{x}/{y}.jpeg',
             latlon: [52.312, 5.6],
             zoom: 15,
             attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
