@@ -250,10 +250,10 @@
             </p>
 
             <h3>
-                Kadaster Top250/50/25 Raster (Binnenkort)
+                <a href="http://app.map5.nl/nltopo/#rd/topraster/3/5.6/52.312">Kadaster Top250/50/25 Raster (Nieuw!)</a>
             </h3>
             <p>
-               <img src="media/kadaster-top25-relief-struct.jpg" alt="kadaster-top25-relief-struct" />
+             <div class="leaflet-map" id="toprastermap"></div>
            </p>
 
             <p>
@@ -271,9 +271,7 @@
                 <li>
                     minder korreligheid door NLExtract voorbewerking
                 </li>
-                <li>ook als OpenStreetMap/Google tiles (PDOK levert alleen RD)</li>
-                <li>reliëf met AHN2 (zie boven)</li>
-                <li>Hoge resolutie (HD) versie</li>
+                <li>ook als OpenStreetMap/Google tiles (PDOK levert alleen RD tiles)</li>
             </ul>
 
          </div>
@@ -391,7 +389,15 @@
             latlon: [52.157, 5.394], // amersfoort
             zoom: 14,
             attribution: ''
+        },
+        {
+            div: 'toprastermap',
+            url: 'http://s.map5.nl/map/gast/tiles/topraster/EPSG900913/{z}/{x}/{y}.jpeg',
+            latlon: [52.312, 5.6],
+            zoom: 15,
+            attribution: 'CC by CA <a href="http://www.kadaster.nl">Kadaster</a>'
         }
+
     ];
 
     // Stel alle interactieve kaarten samen
