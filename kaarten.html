@@ -186,6 +186,16 @@
                  De conversie van AHN2 en AHN3 puntendata uit PDOK naar de basis-reliëfkaart is gedaan door Frank Steggink.
              </p>
             <h3>
+                <a href="http://app.map5.nl/nltopo/#rd/relief_struct_roadslabels/10/5.983/52.006">Reliëfkaart NL - met Labels</a>
+             </h3>
+            <div class="leaflet-map" id="relief_struct_roadslabelsmap"></div>
+              <!--<p>-->
+                 <!--<img src="media/relief-struct-500x300-1600.jpg" alt="reliefkaart" />-->
+             <!--</p>-->
+             <p>
+                 (Sinds okt 2016) Als Reliëfkaart, maar met "overlay" van labels en wegen.
+             </p>
+            <h3>
                 <a href="http://app.map5.nl/nltopo/#rd/openlufo/3/5.6/52.312">OpenLufo</a>
              </h3>
             <div class="leaflet-map" id="openlufomap"></div>
@@ -200,15 +210,6 @@
                      niet is toegestaan vanwege de PDOK
                      CC-BY-NC/GeoGedeeld licentie.</strong>
              </p>
-            <h3>
-                Uw Kaart?
-            </h3>
-
-            <p>
-                Op aanvraag kunnen wij gespecialiseerde kaarten samenstellen en deze hier of
-                in uw infrastructuur beschikbaar maken. Neem <a href="contact.html">contact</a> met ons
-                op!
-            </p>
 
 
         </div>
@@ -224,7 +225,11 @@
             </p>
 
             <p>
-                Map5.nl biedt 3 praktisch landsdekkende kaartlagen: 1900, 1925 en 1949. Voor elk jaartal
+                Map5.nl biedt 3 praktisch landsdekkende kaartlagen:
+                <a href="http://app.map5.nl/nltopo/#rd/bonne_1900/3/5.6/52.312">1900</a>,
+                <a href="http://app.map5.nl/nltopo/#rd/bonne_1925/3/5.6/52.312">1925</a> en
+                <a href="http://app.map5.nl/nltopo/#rd/bonne_1949/3/5.6/52.312">1949</a>
+                Voor elk jaartal
                 zijn daarin de op dat moment geldende Bonnebladen opgenomen. Per jaartal is er ook een "index-laag"
                 die per blad het bladnummer en uitgave-jaar laat zien.
             </p>
@@ -277,6 +282,15 @@
                 </li>
                 <li>ook als OpenStreetMap/Google tiles (PDOK levert alleen RD tiles)</li>
             </ul>
+            <h3>
+                Uw Kaart?
+            </h3>
+
+            <p>
+                Op aanvraag kunnen wij gespecialiseerde kaarten samenstellen en deze hier of
+                in uw infrastructuur beschikbaar maken. Neem <a href="contact.html">contact</a> met ons
+                op!
+            </p>
 
          </div>
     </div>
@@ -383,6 +397,13 @@
         {
             div: 'relief_structmap',
             url: 'http://s.map5.nl/map/gast/tiles/relief_struct/EPSG900913/{z}/{x}/{y}.jpeg',
+            latlon: [52.006, 5.983], // Velp bij Keienberg
+            zoom: 15,
+            attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
+        },
+        {
+            div: 'relief_struct_roadslabelsmap',
+            url: 'http://s.map5.nl/map/gast/tiles/relief_struct_roadslabels/EPSG900913/{z}/{x}/{y}.jpeg',
             latlon: [52.006, 5.983], // Velp bij Keienberg
             zoom: 15,
             attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
