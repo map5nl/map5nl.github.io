@@ -55,7 +55,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="media/map5-logo.png" alt="logo" /></a>
+            <a class="navbar-brand" href="index.html"><img src="media/map5-logo.png" alt="logo"/></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -112,7 +112,8 @@
     </div>
     <!-- /.row -->
     <p>
-        Hieronder staan de beschikbare kaarten. Iedere kaart is interaktief, dwz via de +/- knop kan in/uitgezoomd worden.
+        Hieronder staan de beschikbare kaarten. Iedere kaart is interaktief, dwz via de +/- knop kan in/uitgezoomd
+        worden.
         Klik op de titel van de kaart om deze beeldvullend te zien.
     </p>
 
@@ -144,14 +145,16 @@
                 community),
                 de risico-objecten uit de risicokaart, en de hydrografische data van Rijkswaterstaat (Bron: <a
                         target="_new" href="http://opentopo.nl/">OpenTopo.nl</a>). Sinds maart 2016 is ook de
-                <a target="_new" href="https://nl.wikipedia.org/wiki/Basisregistratie_Grootschalige_Topografie">Basisregistratie Grootschalige Topografie (BGT)</a>
+                <a target="_new" href="https://nl.wikipedia.org/wiki/Basisregistratie_Grootschalige_Topografie">Basisregistratie
+                    Grootschalige Topografie (BGT)</a>
                 opgenomen.
             </p>
 
             <p>
                 Map5.nl levert een "composiete" OpenTopo-kaartlaag. Daarin zijn meerdere resoluties
                 (37.5, 200, 400, 800, 1600 en 3200px/km)
-                opgenomen. 3200px/km is gebaseerd op de BGT. Dat wil zeggen: bij inzoomen/uitzoomen van het kaartbeeld wordt steeds de best passende
+                opgenomen. 3200px/km is gebaseerd op de BGT. Dat wil zeggen: bij inzoomen/uitzoomen van het kaartbeeld
+                wordt steeds de best passende
                 kaartlaag/resolutie
                 getoond. Vooral de resoluties 1600 en 3200px/km zijn zeer gedetailleerd. Ter vergelijking: de Kadaster
                 Top25 Rasterkaart
@@ -168,48 +171,52 @@
             </p>
             <h3>
                 <a href="https://app.map5.nl/nltopo/#rd/relief_struct/3/5.6/52.312">Reliëfkaart NL</a>
-             </h3>
+            </h3>
             <div class="leaflet-map" id="relief_structmap"></div>
-              <!--<p>-->
-                 <!--<img src="media/relief-struct-500x300-1600.jpg" alt="reliefkaart" />-->
-             <!--</p>-->
-             <p>
-                 De Reliëfkaart van Nederland is een zgn "hillshading" kaart op basis van het
-                 <a href="http://www.ahn.nl/">Algemeen Hoogtebestand Nederland (AHN2/AHN3)</a>.
-                 De Reliëfkaart is beschikbaar tot een zeer hoog detailniveau.
-                 Deze kaart is gemaakt uit een basis-relëfkaart met transparant daaroverheen
-                 lichte structuren uit
-                 Top10NL, BAG en BRK.
-                 Ook deze kaart is een "composiet": vervaardigd uit meerdere bronbestanden met resoluties
-                 tot 1600 pixels/km (62.5 cm/px).
-                 Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
-                 De conversie van AHN2 en AHN3 puntendata uit PDOK naar de basis-reliëfkaart is gedaan door Frank Steggink.
-             </p>
+            <!--<p>-->
+            <!--<img src="media/relief-struct-500x300-1600.jpg" alt="reliefkaart" />-->
+            <!--</p>-->
+            <p>
+                De Reliëfkaart van Nederland is een zgn "hillshading" kaart op basis van het
+                <a href="http://www.ahn.nl/">Algemeen Hoogtebestand Nederland (AHN2/AHN3)</a>.
+                De Reliëfkaart is beschikbaar tot een zeer hoog detailniveau.
+                Deze kaart is gemaakt uit een basis-relëfkaart met transparant daaroverheen
+                lichte structuren uit
+                Top10NL, BAG en BRK.
+                Ook deze kaart is een "composiet": vervaardigd uit meerdere bronbestanden met resoluties
+                tot 1600 pixels/km (62.5 cm/px).
+                Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
+                De conversie van AHN2 en AHN3 puntendata uit PDOK naar de basis-reliëfkaart is gedaan door Frank
+                Steggink.
+            </p>
             <h3>
-                <a href="https://app.map5.nl/nltopo/#rd/relief_struct_roadslabels/10/5.983/52.006">Reliëfkaart NL - met Labels</a>
-             </h3>
+                <a href="https://app.map5.nl/nltopo/#rd/relief_struct_roadslabels/10/5.983/52.006">Reliëfkaart NL - met
+                    Labels</a>
+            </h3>
             <div class="leaflet-map" id="relief_struct_roadslabelsmap"></div>
-              <!--<p>-->
-                 <!--<img src="media/relief-struct-500x300-1600.jpg" alt="reliefkaart" />-->
-             <!--</p>-->
-             <p>
-                 (Sinds okt 2016) Als Reliëfkaart, maar met "overlay" van labels en wegen.
-             </p>
+            <!--<p>-->
+            <!--<img src="media/relief-struct-500x300-1600.jpg" alt="reliefkaart" />-->
+            <!--</p>-->
+            <p>
+                (Sinds okt 2016) Als Reliëfkaart, maar met "overlay" van labels en wegen.
+            </p>
             <h3>
                 <a href="https://app.map5.nl/nltopo/#rd/openlufo/3/5.6/52.312">OpenLufo</a>
-             </h3>
+            </h3>
             <div class="leaflet-map" id="openlufomap"></div>
-             <p>
-                 Luchtfoto's uit PDOK met een lichte overlay van topografie uit OpenTopo, dus onder andere
-                 met Top10NL, BAG en OpenStreetMap labels. Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
-                 ook deze kaart is tot hoog detailniveau beschikbaar. Hierdoor kunnen labels zoals huisnummers (uit BAG)
-                 bekeken worden. Ook deze kaart is een "composiet": vervaardigd uit meerdere bronbestanden met resoluties
-                 tot 1600 pixels/km (62.5 cm/px).  De resolutie van de PDOK Luchtfoto's is 50cm. Zie de
-                 <a href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/search?#|7231a1b9-34c4-4c38-a62d-a038cff97c5d">Luchtfoto metadata hier</a>.
-                 <strong>NB deze laag is altijd gratis (dus zonder reclame) omdat commercieël (her)gebruik van de luchtfoto's
-                     niet is toegestaan vanwege de PDOK
-                     CC-BY-NC/GeoGedeeld licentie.</strong>
-             </p>
+            <p>
+                Luchtfoto's uit PDOK met een lichte overlay van topografie uit OpenTopo, dus onder andere
+                met Top10NL, BAG en OpenStreetMap labels. Deze kaart wordt vervaardigd door Jan-Willem van Aalst.
+                ook deze kaart is tot hoog detailniveau beschikbaar. Hierdoor kunnen labels zoals huisnummers (uit BAG)
+                bekeken worden. Ook deze kaart is een "composiet": vervaardigd uit meerdere bronbestanden met resoluties
+                tot 1600 pixels/km (62.5 cm/px). De resolutie van de PDOK Luchtfoto's is 50cm. Zie de
+                <a href="http://www.nationaalgeoregister.nl/geonetwork/srv/dut/search?#|7231a1b9-34c4-4c38-a62d-a038cff97c5d">Luchtfoto
+                    metadata hier</a>.
+                <strong>NB deze laag is altijd gratis (dus zonder reclame) omdat commercieël (her)gebruik van de
+                    luchtfoto's
+                    niet is toegestaan vanwege de PDOK
+                    CC-BY-NC/GeoGedeeld licentie.</strong>
+            </p>
 
 
         </div>
@@ -234,7 +241,8 @@
                 die per blad het bladnummer en uitgave-jaar laat zien.
             </p>
             <h3>
-                <a href="https://app.map5.nl/nltopo/#rd/tmk_1850/3/5.6/52.312">Topografisch Militaire Kaart (TMK) 1850</a>
+                <a href="https://app.map5.nl/nltopo/#rd/tmk_1850/3/5.6/52.312">Topografisch Militaire Kaart (TMK)
+                    1850</a>
             </h3>
             <div class="leaflet-map" id="tmkmap_1850"></div>
             <p>
@@ -259,11 +267,9 @@
             </p>
 
             <h3>
-                <a href="https://app.map5.nl/nltopo/#rd/topraster/3/5.6/52.312">Kadaster Top250/50/25 Raster (Nieuw!)</a>
+                <a href="https://app.map5.nl/nltopo/#rd/topraster/3/5.6/52.312">Kadaster Top250/50/25 Raster</a>
             </h3>
-            <p>
-             <div class="leaflet-map" id="toprastermap"></div>
-           </p>
+            <div class="leaflet-map" id="toprastermap"></div>
 
             <p>
                 De (drie) <a href="https://www.kadaster.nl/web/artikel/Alle-producten-1/TOPraster.htm">TOPraster
@@ -280,8 +286,15 @@
                 <li>
                     minder korreligheid door NLExtract voorbewerking
                 </li>
-                <li>ook als OpenStreetMap/Google tiles (PDOK levert alleen RD tiles)</li>
+                <li>ook als OpenStreetMap/Google (Web-Mercator) tiles (PDOK levert alleen NL RD tiles)</li>
             </ul>
+            <h3>
+                <a href="https://app.map5.nl/nltopo/#rd/opentopo_gray/3/5.6/52.312">OpenTopo Grijswaarden</a>
+            </h3>
+            <div class="leaflet-map" id="opentopograymap"></div>
+
+            <p>(Sinds dec 2016) OpenTopo kaartlaag in grijswaarden. Geschikt als achtergrondkaart.
+                            Resoluties als OpenTopo kaart met ook de BGT op 3200pix/km.</p>
             <h3>
                 Uw Kaart?
             </h3>
@@ -292,18 +305,18 @@
                 op!
             </p>
 
-         </div>
+        </div>
     </div>
     <!-- /.row -->
 
     <!-- Projects Row -->
     <!--<div class="row">-->
-        <!--<div class="col-md-6 img-portfolio">-->
-        <!--</div>-->
-        <!--<div class="col-md-6 img-portfolio">-->
+    <!--<div class="col-md-6 img-portfolio">-->
+    <!--</div>-->
+    <!--<div class="col-md-6 img-portfolio">-->
 
 
-        <!--</div>-->
+    <!--</div>-->
     <!--</div>-->
     <!-- /.row -->
 
@@ -421,8 +434,14 @@
             latlon: [52.312, 5.6],
             zoom: 15,
             attribution: 'CC by CA <a href="http://www.kadaster.nl">Kadaster</a>'
+        },
+        {
+            div: 'opentopograymap',
+            url: 'http://s.map5.nl/map/gast/tiles/opentopo_gray/EPSG900913/{z}/{x}/{y}.jpeg',
+            latlon: [52.312, 5.6],
+            zoom: 15,
+            attribution: 'CC by CA <a href="http://www.opentopo.nl">OpenTopo</a> - <a href=http://openstreetmap.org>OpenStreetMap</a>'
         }
-
     ];
 
     // Stel alle interactieve kaarten samen
